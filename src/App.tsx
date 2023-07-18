@@ -10,7 +10,7 @@ const App: React.FC = (): JSX.Element => (
     <Navbar />
 
     <div className="py-10">
-      <p>Components demo</p>
+      <p>Components demo fdg</p>
     </div>
 
     <Footer />
