@@ -4,8 +4,8 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    // publicPath: "http://localhost:3000/",
     publicPath: "https://micro-frontend-components.vercel.app/",
+    // publicPath: "http://localhost:3000/",
   },
 
   resolve: {
@@ -48,6 +48,7 @@ module.exports = (_, argv) => ({
       exposes: {
         "./Navbar": "./src/components/navbar",
         "./Footer": "./src/components/footer",
+        "./Table": "./src/components/table",
       },
       shared: {
         ...deps,
